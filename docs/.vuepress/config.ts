@@ -44,6 +44,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   lang: 'zh-CN',
   title: 'sf',
   description: '博客',
+  dest: resolve(__dirname, '..','..','dist'),
 
   // 主题和它的配置
   theme: '@vuepress/theme-default',
