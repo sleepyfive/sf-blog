@@ -42,6 +42,7 @@ const autoGetSidebarOptionBySrcDir = (srcPath) => {
     return sidebar
 }
 
+const BASE = '/sf-blog/'
 
 export default defineUserConfig<DefaultThemeOptions>({
   // 站点配置
@@ -49,7 +50,10 @@ export default defineUserConfig<DefaultThemeOptions>({
   title: 'sf',
   description: '博客',
   dest: resolve(__dirname, '..','..','dist'),
-  base: '/sf-blog/',
+  base: BASE,
+  head: [
+      ['link', { rel: 'icon', href: BASE+'favicon.ico' }],
+  ],
 
   // 主题和它的配置
   theme: '@vuepress/theme-default',
