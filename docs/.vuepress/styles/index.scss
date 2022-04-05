@@ -35,3 +35,16 @@ html.dark {
         background-color: var(--bg-light);
     }
 }
+
+//修改内置样式
+:root { // 原来使用的:root优先级比html更高，覆盖时需要用:root
+
+    --c-brand: #32CD32;
+
+}
+
+html.dark {
+
+    --c-brand: 	#008000;
+
+}
