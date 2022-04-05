@@ -1,0 +1,1 @@
+const e={key:"v-8c0a722e",path:"/fuck.html",title:"",lang:"zh-CN",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1649153128e3,contributors:[{name:"sleepyfive",email:"1349945922@qq.com",commits:1}]},filePathRelative:"fuck.md"};export{e as data};
