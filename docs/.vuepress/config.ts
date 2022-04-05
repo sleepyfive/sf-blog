@@ -13,7 +13,7 @@ const toSidebarOption= (tree = []) => {
         if (isDirectory(v)) {
             return {
                 text: v.name,
-                collapsable: false,
+                collapsible: true,
                 children: toSidebarOption(v.children),
             };
         } else {
