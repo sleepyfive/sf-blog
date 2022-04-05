@@ -9,7 +9,7 @@ const toSidebarOption= (tree = []) => {
 
     const isDirectory = (v) => v.children !== undefined
 
-    const t = tree.map((v) => {
+    let t = tree.map((v) => {
         if (isDirectory(v)) {
             return {
                 text: v.name,
@@ -25,6 +25,10 @@ const toSidebarOption= (tree = []) => {
             }
         }
     });
+    const idx = t.findIndex(v => v.text === '首页')
+    if(idx!==-1) {
+        t = [t[idx], ...t.filter((_,i) => i !== idx )]
+    }
     return t
 }
 
