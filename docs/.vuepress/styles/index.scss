@@ -1,0 +1,37 @@
+// 设置滚动条样式
+html {
+
+    --bg-dark: #ccc;
+
+    // 滚动条整体
+    &::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+        background-color: var(--c-bg);
+    }
+
+    // 滚动条拖动块
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--bg-dark);
+        border-radius: 10px;
+    }
+
+    // 滚动条头上的按钮
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    // 两个滚动条会重叠的那个角
+    &::-webkit-scrollbar-corner {
+        background-color: var(--c-bg);
+    }
+}
+
+html.dark {
+
+    --bg-light: #adbac7;;
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--bg-light);
+    }
+}
